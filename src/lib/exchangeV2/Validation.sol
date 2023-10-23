@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.17;
 
-import { MerkleProof } from "@openzeppelin-contracts/utils/cryptography/MerkleProof.sol";
+import { MerkleProof } from "@openzeppelin/utils/cryptography/MerkleProof.sol";
 
 import { AssetType, Order, Exchange, Listing, OrderType, FeeRate, Fees, Taker } from "./Structs.sol";
 
