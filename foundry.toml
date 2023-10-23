@@ -1,0 +1,37 @@
+[profile.default]
+src = 'src'
+test = 'test'
+script = 'script'
+out = 'out'
+libs = ['lib']
+remappings = [
+    'forge-std/=lib/forge-std/src/',
+    'ds-test/=lib/forge-std/lib/ds-test/src/',
+    '@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/',
+    '@openzeppelin/=lib/openzeppelin-contracts/contracts/',
+    '@solmate/=lib/solmate/src/',
+    '~/=src/'
+]
+# list of libraries to link in the form of `<path to lib>:<lib name>:<address>`: `"src/MyLib.sol:MyLib:0x8De6DDbCd5053d32292AAA0D2105A32d108484a6"`
+# the <path to lib> supports remappings
+libraries = []
+cache = true
+cache_path = 'cache'
+broadcast = 'broadcast'
+include_paths = []
+force = false
+evm_version = 'london'
+gas_reports = ['*']
+gas_reports_ignore = []
+
+## Sets the concrete solc version to use, this overrides the `auto_detect_solc` value
+auto_detect_solc = true
+offline = false
+optimizer = true
+optimizer_runs = 3000
+
+
+[profile.test]
+verbosity = 3
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+
