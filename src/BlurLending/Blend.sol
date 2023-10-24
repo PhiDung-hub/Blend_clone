@@ -745,10 +745,10 @@ contract Blend is IBlend, OfferController, UUPSUpgradeable {
   }
 
   function onERC721Received(
-    address operator,
-    address from,
-    uint256 tokenId,
-    bytes calldata data
+    address /* operator */,
+    address /* from */,
+    uint256 /* tokenId */,
+    bytes calldata /* data */
   ) external pure returns (bytes4) {
     return this.onERC721Received.selector;
   }
